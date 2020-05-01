@@ -1,0 +1,28 @@
+#!/bin/bash
+#benchmark 256  1 100 >> benchmark-log
+#benchmark 256  2 100 >> benchmark-log
+#benchmark 256  3 100 >> benchmark-log
+#benchmark 256  4 100 >> benchmark-log
+#benchmark 256  5 100 >> benchmark-log
+#benchmark 256  6 100 >> benchmark-log
+
+#benchmark 512  1 100 >> benchmark-log
+#benchmark 512  2 100 >> benchmark-log
+#benchmark 512  3 100 >> benchmark-log
+#benchmark 512  4 100 >> benchmark-log
+#benchmark 512  5 100 >> benchmark-log
+#benchmark 512  6 100 >> benchmark-log
+
+benchmark 1024 1 100 >> benchmark-log
+benchmark 1024 2 100 >> benchmark-log
+benchmark 1024 3 100 >> benchmark-log
+benchmark 1024 4 100 >> benchmark-log
+benchmark 1024 5 100 >> benchmark-log
+benchmark 1024 6 100 >> benchmark-log
+
+#benchmark 2048 1 50 >> benchmark-log
+#benchmark 2048 2 50 >> benchmark-log
+#benchmark 2048 3 50 >> benchmark-log
+#benchmark 2048 4 50 >> benchmark-log
+#benchmark 2048 5 50 >> benchmark-log
+#benchmark 2048 6 50 >> benchmark-log

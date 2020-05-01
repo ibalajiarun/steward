@@ -1,0 +1,12 @@
+Use the program create to create the shares to tolerate a specified number of faults.
+Usage: ./create keysize #faults directory
+It will create a threshold sharing with:
+n = 3*faults+1
+k = faults+1
+The call to TC_write_shares which takes a TC_DEALER actually writes the shares to files in a specified directory.  A description of the function is also included in TC.h.
+
+In order for a client to read a share, the function TC_read_share(<filename>) returns a TC_IND individual private key.
+
+In order to get the public key, a call to TC_read_public_key(<filename>) returns  a TC_PK which is the public key for the system.
+
+The read sample program demonstrates reading in the keys and validating them.

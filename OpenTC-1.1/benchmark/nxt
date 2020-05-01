@@ -1,0 +1,17 @@
+#!/bin/bash
+
+width=50
+height=18
+xint=380
+yint=250
+nx=4
+ny=3
+for ((x=0; x<$nx; x++))
+do
+	for ((y=0; y<$ny; y++))
+	do
+		xpos=`echo $x \* $xint | bc`
+		ypos=`echo $y \* $yint | bc`
+		xterm -geometry ${width}x${height}+${xpos}+${ypos} &
+	done
+done
